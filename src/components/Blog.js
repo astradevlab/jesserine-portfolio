@@ -3,8 +3,8 @@ import Link from "next/link";
 const Blog = () => {
   return (
     <section
-      id="blog"
-      data-nav-tooltip="Blog"
+      id="projects"
+      data-nav-tooltip="Projects"
       className="pp-section pp-scrollable section"
     >
       <div className="container">
