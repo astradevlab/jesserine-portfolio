@@ -263,6 +263,7 @@ const Portfolio = () => {
           </div>{" "}
           {/* grid item */}
         </div>
+        <div className="separated" />
       </div>
     </section>
   );
