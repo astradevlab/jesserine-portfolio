@@ -3,6 +3,7 @@ import { Fragment, useEffect, useState } from "react"
 import PreLoader from "../src/layout/PreLoader"
 import "../styles/glitch.css"
 import "../styles/globals.css"
+import Script from "next/script"
 function MyApp({ Component, pageProps }) {
   const [load, setLoad] = useState(true)
   useEffect(() => {
@@ -39,6 +40,16 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-PK6BDTX68T"></Script>
+      <Script>
+        {`  
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PK6BDTX68T');
+      `}
+      </Script>
       {load && <PreLoader />}
       <Component {...pageProps} />
     </Fragment>

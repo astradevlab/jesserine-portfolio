@@ -1,4 +1,18 @@
 const About = () => {
+  const skillsData = [
+    { label: "Xamarin", asset: "xamarin.png" },
+    { label: "React Native", asset: "react-native.png" },
+
+    { label: "Typescript", asset: "typescript.png" },
+    { label: "Javascript", asset: "javascript.png" },
+    { label: "Android", asset: "android.png" },
+    { label: "Swift", asset: "swift.png" },
+    { label: "ASP.net", asset: "dot-net.png" },
+    { label: "Node.js", asset: "nodejs.png" },
+    { label: "Firebase", asset: "firebase.png" },
+    { label: "Figma", asset: "figma.png" },
+    { label: "My SQL", asset: "mysql.png" },
+  ]
   return (
     <section
       id="about"
@@ -22,16 +36,12 @@ const About = () => {
                 <h3>About me.</h3>
               </div>
               <div className="about-text">
-                <h3>
-                  {`I'm`} a Mobile Application Developer with over 6 years of
-                  experience.{" "}
-                </h3>
+                <h3>{`I'm`} a Mobile Application Developer with over 6 years of experience. </h3>
                 <p>
-                    I design and develop mobile applications using 
-                    React Native and Xamarin Framworks. {`I'm`} knowledgable 
-                    in Android or iOS Native development and adopts test-driven 
-                    development, creating automated test cases for features and
-                     bug fixes. {`I'm`} experienced 
+                  I design and develop mobile applications using React Native and Xamarin Framworks.{" "}
+                  {`I'm`} knowledgable in Android or iOS Native development and adopts test-driven
+                  development, creating automated test cases for features and bug fixes. {`I'm`}{" "}
+                  experienced
                 </p>
                 {/* <div className="btn-bar">
                   <a className="px-btn px-btn-theme" href="#">
@@ -71,55 +81,25 @@ const About = () => {
           </div>
           <div className="col-lg-7 ml-auto m-15px-tb">
             <div className="skills-box">
-              <h3>My skills</h3>
-              <p>
-                {`I'm`} a Freelancer Front-end Developer with over 3 years of
-                experience. I code and create web elements for amazing people
-                around the world. I like work with new people. New people new
-                Experiences.
-              </p>
-              <div className="skill-lt">
-                <h6>HTML5</h6>
-                <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "92%" }}>
-                    <span data-toggle="tooltip" title="92%" />
-                  </div>
-                </div>
-              </div>
-              {/* /skill */}
-              <div className="skill-lt">
-                <h6>WordPress</h6>
-                <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "72%" }}>
-                    <span data-toggle="tooltip" title="72%" />
-                  </div>
-                </div>
-              </div>
-              {/* /skill */}
-              <div className="skill-lt">
-                <h6>Magento</h6>
-                <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "86%" }}>
-                    <span data-toggle="tooltip" title="86%" />
-                  </div>
-                </div>
-              </div>
-              {/* /skill */}
-              <div className="skill-lt">
-                <h6>UI/UX</h6>
-                <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "88%" }}>
-                    <span data-toggle="tooltip" title="88%" />
-                  </div>
-                </div>
-              </div>
-              {/* /skill */}
+              <h3>Tech Stack</h3>
+              {skillsData.map((skill) => {
+                return (
+                  <>
+                    <img
+                      src={"/assets/logos/" + skill.asset}
+                      height={40}
+                      width={40}
+                      style={{ margin: 5 }}
+                    />
+                  </>
+                )
+              })}
             </div>
           </div>
         </div>
         <div className="separated" />
       </div>
     </section>
-  );
-};
-export default About;
+  )
+}
+export default About

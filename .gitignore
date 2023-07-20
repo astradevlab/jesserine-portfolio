@@ -65,7 +65,3 @@ node_modules/
 # dotenv environment variables file
 .env
 
-next
-.next/cache/webpack/client-development
-.next/
-.next/
