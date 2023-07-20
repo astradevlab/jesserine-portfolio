@@ -9,25 +9,24 @@ const Blog = () => {
     >
       <div className="container">
         <div className="title">
-          <h3>Latest Blog.</h3>
+          <h3>Projects.</h3>
         </div>
         <div className="row">
           <div className="col-md-6 m-15px-tb">
             <div className="blog-grid">
               <div className="blog-img">
-                <Link href="/single-blog">
+                <Link href="https://www.ncr.com/product-catalog/ncr-fastlane-mobile-shopper">
                   <a>
-                    <img src="static/img/blog-1.jpg" title="" alt="" />
+                    <img src="static/img/flms.png" title="" alt="" width="600" height="350" />
                   </a>
                 </Link>
               </div>
               <div className="blog-info">
-                <div className="meta">29/FEB/2022 - WEBSITE - 1 COMMENT</div>
+                <div className="meta">NCR Corporation</div>
                 <h6>
-                  <Link href="/single-blog">
+                  <Link href="https://www.ncr.com/product-catalog/ncr-fastlane-mobile-shopper">
                     <a>
-                      Five Solid Evidences Attending Design Is Good For Your
-                      Career Development.
+                      Fastlane Mobile Shopper
                     </a>
                   </Link>
                 </h6>
@@ -37,19 +36,18 @@ const Blog = () => {
           <div className="col-md-6 m-15px-tb">
             <div className="blog-grid">
               <div className="blog-img">
-                <Link href="/single-blog">
+              <Link href="https://www.tritechretail.com/topic/aim_mobile">
                   <a>
-                    <img src="static/img/blog-2.jpg" title="" alt="" />
+                    <img src="static/img/aimmobile.png" title="" alt="" width="600" height="350"/>
                   </a>
                 </Link>
               </div>
               <div className="blog-info">
-                <div className="meta">29/FEB/2022 - WEBSITE - 1 COMMENT</div>
+                <div className="meta">Tritech Retail</div>
                 <h6>
-                  <Link href="/single-blog">
+                  <Link href="https://play.google.com/store/apps/details?id=com.tritech.aimmobile&gl=US">
                     <a>
-                      Ten Mind-Blowing Reasons Why Design Is Using This
-                      Technique For Exposure.
+                      AIM Mobile
                     </a>
                   </Link>
                 </h6>
@@ -59,19 +57,18 @@ const Blog = () => {
           <div className="col-md-6 m-15px-tb">
             <div className="blog-grid">
               <div className="blog-img">
-                <Link href="/single-blog">
+                <Link href="">
                   <a>
-                    <img src="static/img/blog-3.jpg" title="" alt="" />
+                    <img src="static/img/fishingbuddy.png" title="" alt="" width="600" height="350" />
                   </a>
                 </Link>
               </div>
               <div className="blog-info">
-                <div className="meta">29/FEB/2022 - WEBSITE - 1 COMMENT</div>
+                <div className="meta">Freelance</div>
                 <h6>
-                  <Link href="/single-blog">
+                  <Link href="">
                     <a>
-                      I Will Tell You The Truth About Design In The Next 60
-                      Seconds.
+                      Fishing Buddy mobile application
                     </a>
                   </Link>
                 </h6>
@@ -81,19 +78,18 @@ const Blog = () => {
           <div className="col-md-6 m-15px-tb">
             <div className="blog-grid">
               <div className="blog-img">
-                <Link href="/single-blog">
+                <Link href="https://play.google.com/store/apps/details?id=zone.acumen.pinpin&gl=US">
                   <a>
-                    <img src="static/img/blog-4.jpg" title="" alt="" />
+                    <img src="static/img/pinpin.png" title="" alt="" width="600" height="350" />
                   </a>
                 </Link>
               </div>
               <div className="blog-info">
-                <div className="meta">29/FEB/2022 - WEBSITE - 1 COMMENT</div>
+                <div className="meta">Element7</div>
                 <h6>
-                  <Link href="/single-blog">
+                  <Link href="https://play.google.com/store/apps/details?id=zone.acumen.pinpin&gl=US">
                     <a>
-                      What You Know About Design And What You {`Don't`} Know
-                      About Design.
+                      PinPin
                     </a>
                   </Link>
                 </h6>
@@ -101,8 +97,8 @@ const Blog = () => {
             </div>
           </div>
           <div className="col-12 read-more-blog text-center">
-            <Link href="/blog">
-              <a className="px-btn px-btn-theme">More Blogs</a>
+            <Link href="/">
+              <a className="px-btn px-btn-theme">More Projects</a>
             </Link>
           </div>
         </div>
