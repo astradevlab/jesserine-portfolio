@@ -66,6 +66,7 @@ const About = () => {
                 <span>2013-2017</span>
                 <h6>Bachelor of Science in Computer Science</h6>
                 <p>University of San Jose - Recoletos</p>
+                <p style={{ fontSize: 12, fontWeight: 500 }}>Graduated Cum Laude</p>
               </li>
               {/* <li>
                 <span>2010-2012</span>
