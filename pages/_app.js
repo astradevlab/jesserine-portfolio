@@ -1,15 +1,15 @@
-import Head from "next/head";
-import { Fragment, useEffect, useState } from "react";
-import PreLoader from "../src/layout/PreLoader";
-import "../styles/glitch.css";
-import "../styles/globals.css";
+import Head from "next/head"
+import { Fragment, useEffect, useState } from "react"
+import PreLoader from "../src/layout/PreLoader"
+import "../styles/glitch.css"
+import "../styles/globals.css"
 function MyApp({ Component, pageProps }) {
-  const [load, setLoad] = useState(true);
+  const [load, setLoad] = useState(true)
   useEffect(() => {
     setTimeout(() => {
-      setLoad(false);
-    }, 1000);
-  }, []);
+      setLoad(false)
+    }, 1000)
+  }, [])
 
   return (
     <Fragment>
@@ -17,33 +17,16 @@ function MyApp({ Component, pageProps }) {
         <title>Jesserine Lopez - Portfolio</title>
         {/* <!-- Favicon --> */}
 
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        {/* Favicon Icon */}
+        <link rel="shortcut icon" href="assets/logos/jesserine-animoji.jpeg" type="image/x-icon" />
         {/* <!-- plugin CSS --> */}
-        <link
-          href="static/plugin/bootstrap/css/bootstrap.min.css"
-          rel="stylesheet"
-        />
-        <link
-          href="static/plugin/font-awesome/css/all.min.css"
-          rel="stylesheet"
-        />
+        <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="static/plugin/font-awesome/css/all.min.css" rel="stylesheet" />
         <link href="static/plugin/et-line/style.css" rel="stylesheet" />
-        <link
-          href="static/plugin/themify-icons/themify-icons.css"
-          rel="stylesheet"
-        />
-        <link
-          href="static/plugin/owl-carousel/css/owl.carousel.min.css"
-          rel="stylesheet"
-        />
-        <link
-          href="static/plugin/magnific/magnific-popup.css"
-          rel="stylesheet"
-        />
-        <link
-          href="static/plugin/scroll/jquery.mCustomScrollbar.min.css"
-          rel="stylesheet"
-        />
+        <link href="static/plugin/themify-icons/themify-icons.css" rel="stylesheet" />
+        <link href="static/plugin/owl-carousel/css/owl.carousel.min.css" rel="stylesheet" />
+        <link href="static/plugin/magnific/magnific-popup.css" rel="stylesheet" />
+        <link href="static/plugin/scroll/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
         {/* <!-- theme css --> */}
         <link href="static/css/style.css" rel="stylesheet" />
 
@@ -59,7 +42,7 @@ function MyApp({ Component, pageProps }) {
       {load && <PreLoader />}
       <Component {...pageProps} />
     </Fragment>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp
