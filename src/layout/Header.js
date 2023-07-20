@@ -14,7 +14,7 @@ const Header = ({ blog }) => {
         <div className="d-flex">
           <div className="navbar-brand">
             <Link href="/">
-              <a className="logo-text">Sergio</a>
+              <a className="logo-text">Jesserine</a>
             </Link>
           </div>
           <button
@@ -38,14 +38,14 @@ const Header = ({ blog }) => {
           <div className="hl-top">
             <div className="hl-logo">
               <div className="img">
-                <img src="static/img/about-me.jpg" title="" alt="" />
+                <img src="static/img/jess-github.jpeg" title="" alt="" />
               </div>
-              <h5>Sergiobi</h5>
+              <h5>Jesserine</h5>
             </div>
           </div>
           {blog ? <MenuWithBlog /> : <MenuWithOutBlog />}
         </div>
-        <div className="nav justify-content-center social-icons">
+        {/* <div className="nav justify-content-center social-icons">
           <a href="#">
             <i className="fab fa-facebook-f" />
           </a>
@@ -61,7 +61,7 @@ const Header = ({ blog }) => {
           <a href="#">
             <i className="fab fa-pinterest" />
           </a>
-        </div>
+        </div> */}
       </header>
     </Fragment>
   );
@@ -83,22 +83,22 @@ const MenuWithOutBlog = () => {
           <span>About Me</span>
         </a>
       </li>
-      <li data-menuanchor="services">
-        <a className="nav-link" href="#services">
-          <i className="ti-panel" />
-          <span>Services</span>
-        </a>
-      </li>
-      <li data-menuanchor="work">
-        <a className="nav-link" href="#work">
-          <i className="ti-bookmark-alt" />
-          <span>Portfolio</span>
-        </a>
-      </li>
       <li data-menuanchor="blog" className="blog">
         <a className="nav-link" href="#blog">
           <i className="ti-layout-media-overlay-alt-2" />
           <span>Blogs</span>
+        </a>
+      </li>
+      {/* <li data-menuanchor="work">
+        <a className="nav-link" href="#work">
+          <i className="ti-bookmark-alt" />
+          <span>Portfolio</span>
+        </a>
+      </li> */}
+      <li data-menuanchor="services">
+        <a className="nav-link" href="#services">
+          <i className="ti-panel" />
+          <span>Services</span>
         </a>
       </li>
       <li data-menuanchor="contactus">
@@ -145,14 +145,14 @@ const MenuWithBlog = () => {
             </a>
           </Link>
         </li>
-        <li data-menuanchor="work">
+        {/* <li data-menuanchor="work">
           <Link href="/#work">
             <a className="nav-link">
               <i className="ti-bookmark-alt" />
               <span>Portfolio</span>
             </a>
           </Link>
-        </li>
+        </li> */}
         <li data-menuanchor="blog" className="blog active">
           <Link href="/#blog">
             <a className="nav-link">
