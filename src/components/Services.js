@@ -1,8 +1,8 @@
-import dynamic from "next/dynamic";
+import dynamic from "next/dynamic"
 
 const Testimonials = dynamic(() => import("./Testimonials"), {
   ssr: false,
-});
+})
 
 const Services = () => {
   return (
@@ -11,7 +11,7 @@ const Services = () => {
       data-nav-tooltip="Services"
       className="pp-section pp-scrollable section"
     >
-    <div className="container">
+      <div className="container">
         <div className="title">
           <h3>Experience.</h3>
         </div>
@@ -20,7 +20,7 @@ const Services = () => {
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <img src="static/img/tritech-logo.png" title="" alt="" />
+                  <img src="static/img/tritech-Logo.png" title="" alt="" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
@@ -60,7 +60,6 @@ const Services = () => {
                   <h6>Software Engineer - Mobile Application Developer</h6>
                   <label>NCR Corporation | On Site | May 2019 - May 2021</label>
                   <div className="rb-time">Full Time</div>
-                  
                 </div>
               </div>
             </div>
@@ -93,8 +92,7 @@ const Services = () => {
                   <h6>Software Developer Intern</h6>
                   <label>Yoshii Software Solutions | On Site | April 2016 - October 2016</label>
                   <div className="rb-time">Internship</div>
-                  <p>
-                  </p>
+                  <p></p>
                 </div>
               </div>
             </div>
@@ -182,6 +180,6 @@ const Services = () => {
         <div className="separated" />
       </div>
     </section>
-  );
-};
-export default Services;
+  )
+}
+export default Services

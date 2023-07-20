@@ -1,26 +1,20 @@
-import emailjs from "emailjs-com";
-import { useState } from "react";
+import emailjs from "emailjs-com"
+import { useState } from "react"
 const Contact = () => {
   const [mailData, setMailData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
-  });
-  const { name, email, message, subject } = mailData;
-  const [error, setError] = useState(null);
-  const onChange = (e) =>
-    setMailData({ ...mailData, [e.target.name]: e.target.value });
+  })
+  const { name, email, message, subject } = mailData
+  const [error, setError] = useState(null)
+  const onChange = (e) => setMailData({ ...mailData, [e.target.name]: e.target.value })
   const onSubmit = (e) => {
-    e.preventDefault();
-    if (
-      name.length === 0 ||
-      email.length === 0 ||
-      message.length === 0 ||
-      subject.length === 0
-    ) {
-      setError(true);
-      clearError();
+    e.preventDefault()
+    if (name.length === 0 || email.length === 0 || message.length === 0 || subject.length === 0) {
+      setError(true)
+      clearError()
     } else {
       emailjs
         .send(
@@ -31,21 +25,21 @@ const Contact = () => {
         )
         .then(
           (response) => {
-            setError(false);
-            clearError();
-            setMailData({ name: "", email: "", message: "", subject: "" });
+            setError(false)
+            clearError()
+            setMailData({ name: "", email: "", message: "", subject: "" })
           },
           (err) => {
-            console.log(err.text);
+            console.log(err.text)
           }
-        );
+        )
     }
-  };
+  }
   const clearError = () => {
     setTimeout(() => {
-      setError(null);
-    }, 2000);
-  };
+      setError(null)
+    }, 2000)
+  }
   return (
     <section
       id="contactus"
@@ -63,28 +57,36 @@ const Contact = () => {
               <ul>
                 <li className="media">
                   <i className="ti-email" />
-                  <span className="media-body">dev.jesserinelopez@gmail.com</span>
+                  <span className="media-body">
+                    <a href="mailto:dev.jesserinelopez@gmail.com">dev.jesserinelopez@gmail.com</a>
+                  </span>
                 </li>
                 <li className="media">
                   <i className="ti-mobile" />
-                  <span className="media-body">+65 9136 5437</span>
+                  <span className="media-body">
+                    <a href="callto:+6591365437">+65 9136 5437</a>
+                  </span>
                 </li>
                 <li className="media">
                   <i className="ti-linkedin" />
                   <span className="media-body">
-                    <a href="https://www.linkedin.com/in/jesserinel/" color="#ffffff">linkedin.com/jesserinel</a>
+                    <a href="https://www.linkedin.com/in/jesserinel/" target="_blank">
+                      linkedin.com/jesserinel
+                    </a>
                   </span>
                 </li>
                 <li className="media">
                   <i className="ti-github" />
                   <span className="media-body">
-                    <a href="https://github.com/jesserine" color="#ffffff">github.com/jesserine</a>
+                    <a href="https://github.com/jesserine" target="_blank">
+                      github.com/jesserine
+                    </a>
                   </span>
                 </li>
               </ul>
             </div>
           </div>
-          
+
           {/* <div className="col-12">
             <div className="google-map">
               <div className="embed-responsive embed-responsive-21by9">
@@ -99,6 +101,6 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  );
-};
-export default Contact;
+  )
+}
+export default Contact
