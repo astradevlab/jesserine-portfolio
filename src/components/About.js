@@ -11,7 +11,7 @@ const About = () => {
             <div className="about-me">
               <div className="img">
                 <div className="img-in">
-                  <img src="static/img/about-me.png" title="" alt="" />
+                  <img src="static/img/jess-github.jpeg" title="" alt="" />
                 </div>
               </div>
             </div>
@@ -23,43 +23,24 @@ const About = () => {
               </div>
               <div className="about-text">
                 <h3>
-                  {`I'm`} a Freelancer Front-end Developer with over 3 years of
+                  {`I'm`} a Mobile Application Developer with over 6 years of
                   experience.{" "}
                 </h3>
                 <p>
-                  {`I'm`} a Freelancer Front-end Developer with over 3 years of
-                  experience. {`I'm`} from San Francisco. I code and create web
-                  elements for amazing people around the world. I like work with
-                  new people. New people new Experiences.
+                    I design and develop mobile applications using 
+                    React Native and Xamarin Framworks. {`I'm`} knowledgable 
+                    in Android or iOS Native development and adopts test-driven 
+                    development, creating automated test cases for features and
+                     bug fixes. {`I'm`} experienced 
                 </p>
-                <div className="row">
-                  <div className="col-auto">
-                    <div className="media align-items-center">
-                      <span className="count">5k</span>
-                      <div className="media-body">
-                        Projects <br />
-                        Completed.
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-auto">
-                    <div className="media align-items-center">
-                      <span className="count">3k</span>
-                      <div className="media-body">
-                        Satisfied <br />
-                        Clients.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="btn-bar">
+                {/* <div className="btn-bar">
                   <a className="px-btn px-btn-theme" href="#">
                     <span>Contact Me</span>
                   </a>
                   <a className="px-btn px-btn-theme" href="#">
-                    <span>Portfolio</span>
+                    <span>Github</span>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -72,11 +53,11 @@ const About = () => {
           <div className="col-lg-4 m-15px-tb">
             <ul className="aducation-box">
               <li>
-                <span>2010-2012</span>
-                <h6>Graphic Designer</h6>
-                <p>International Design Institute</p>
+                <span>2013-2017</span>
+                <h6>Bachelor of Science in Computer Science</h6>
+                <p>University of San Jose - Recoletos</p>
               </li>
-              <li>
+              {/* <li>
                 <span>2010-2012</span>
                 <h6>Web Development</h6>
                 <p>International Design Institute</p>
@@ -85,7 +66,7 @@ const About = () => {
                 <span>2010-2012</span>
                 <h6>Search Engine Optimization</h6>
                 <p>International Design Institute</p>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="col-lg-7 ml-auto m-15px-tb">
@@ -137,80 +118,6 @@ const About = () => {
           </div>
         </div>
         <div className="separated" />
-        <div className="title">
-          <h3>Experience.</h3>
-        </div>
-        <div className="resume-box">
-          <div className="resume-row">
-            <div className="row">
-              <div className="col-sm-3 col-md-3 col-xl-2">
-                <div className="rb-left">
-                  <img src="static/img/a1.png" title="" alt="" />
-                </div>
-              </div>
-              <div className="col-sm-9 col-md-9 col-xl-10">
-                <div className="rb-right">
-                  <h6>Front-end Developer</h6>
-                  <label>WeLab | Remote | Jan 2019 - Present</label>
-                  <div className="rb-time">Full Time</div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="resume-row">
-            <div className="row">
-              <div className="col-sm-3 col-md-3 col-xl-2">
-                <div className="rb-left">
-                  <img src="static/img/a2.png" title="" alt="" />
-                </div>
-              </div>
-              <div className="col-sm-9 col-md-9 col-xl-10">
-                <div className="rb-right">
-                  <h6>Front-end Developer</h6>
-                  <label>WeLab | Remote | Jan 2019 - Present</label>
-                  <div className="rb-time">Full Time</div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="resume-row">
-            <div className="row">
-              <div className="col-sm-3 col-md-3 col-xl-2">
-                <div className="rb-left">
-                  <img src="static/img/a3.png" title="" alt="" />
-                </div>
-              </div>
-              <div className="col-sm-9 col-md-9 col-xl-10">
-                <div className="rb-right">
-                  <h6>Front-end Developer</h6>
-                  <label>WeLab | Remote | Jan 2019 - Present</label>
-                  <div className="rb-time">Full Time</div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
