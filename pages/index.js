@@ -22,25 +22,30 @@ const Index = () => {
               <div className="col-lg-6">
                 <div className="type-box">
                   <h6>Hello, I am</h6>
-                  <h1 className="font-alt">Sergio Gadot</h1>
+                  <h1 className="font-alt">Jesserine Lopez</h1>
                   <p className="lead">
-                    I Am Passionate <TypingAnimation />
+                  {`I'm`} A Passionate <TypingAnimation />
                   </p>
                   <p className="desc">
-                    I design and develop services for customers of all sizes,
-                    specializing in creating stylish, modern websites, web
-                    services and online stores.
+                    I deliver impactful solutions through effective problem-solving, 
+                    combined with my background in the field, makes me confident 
+                    in my capacity to make a valuable contribution to any team I work with.
                   </p>
                   <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="#">
-                      Donwload CV
+                    <a className="px-btn px-btn-theme" href="https://docs.google.com/document/d/1N4YEKurDWVUvuVLfMM5UUjQPwzKM55RP/edit?usp=sharing&ouid=101951879133321395056&rtpof=true&sd=true">
+                      Download CV
+                    </a>
+                    &emsp;
+                    &emsp;
+                    <a className="px-btn px-btn-theme" href="/#contactus">
+                    <span>Contact Me</span>
                     </a>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="hb-img">
-                  <img src="static/img/home-banner.png" title="" alt="" />
+                  <img src="static/img/jesserine.JPG" title="" alt="" />
                 </div>
               </div>
             </div>
@@ -51,15 +56,15 @@ const Index = () => {
       {/* about us */}
       <About />
       {/* End about us */}
-      {/* Services */}
-      <Services />
-      {/* End Services */}
       {/* Portfolio */}
-      <Portfolio />
+      {/* <Portfolio /> */}
       {/* End Portfolio */}
       {/* Blog */}
       <Blog />
       {/* End Blog */}
+      {/* Services */}
+      <Services />
+      {/* End Services */}
       {/* Contact us */}
       <Contact />
     </Layout>
